@@ -79,7 +79,8 @@ public class Calculator implements Serializable {
 	public void performOperation(String operador) {
 		System.out.println(operador);
 		arrayListOperadores.add(operador);
-		if (operador=="=" && arrayListNumeros.size() >= 2) {
+		// operador.equals("+") || operador.equals("-") || operador.equals("*") || operador.equals("/"))
+		if (operador.equals("=") && arrayListNumeros.size() >= 2) {
 			for (int i = 0; i < arrayListOperadores.size(); i++) {
 				//multiplicacion
 				if(arrayListOperadores.get(i).equals("*")) {

@@ -8,7 +8,7 @@ public class MiMain {
 		//variable de referencia (calc)
 		//Reservar un espacio de memoria (new)
 		//llamado al constructor (Calculator())
-		
+		/*
 		Calculator calc =  new Calculator();
 		
 		calc.setOperandOne(10.5);
@@ -26,6 +26,7 @@ public class MiMain {
 		calc.performOperation("+");
 		calc.performOperation(5.2);
 		calc.performOperation("=");
+		*/
 		//System.out.println(calc.getResult1());
 		
 		//crear 2 arraylist 1 numeros y 1 para operadores ok ok
@@ -39,8 +40,17 @@ public class MiMain {
 		
 		
 		
-       // boolean resultado = calc.validarNumero("+");
-       // System.out.println("es numero? "+resultado);
+Calculator2 c = new Calculator2();
+		
+		c.performOperation(10.5);
+		c.performOperation("+");
+		c.performOperation(5.2);
+		c.performOperation("*");
+		c.performOperation(10);
+		/*c.performOperation("+");
+		c.performOperation(5.2);*/
+		c.performOperation("=");
+		c.getResults();
 		
 	}
 
